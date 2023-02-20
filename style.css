@@ -1,0 +1,409 @@
+html
+{
+scroll-behavior: smooth;
+}
+
+
+#Particles-BG {
+    top: 0;
+    left: 0;
+    width: 100vw;
+	position: fixed;
+	z-index: -1;
+}
+body
+{
+z-index: 0;
+padding: 0 0 0 0;
+margin: 0 0 0 0;
+background-image: url("img/background.png");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+}
+main
+{
+display: grid;
+grid-template-columns: 1fr;
+row-gap: 20vmin;
+}
+nav
+{
+display: inline;
+left: 0px;
+right: 0px;
+top: 0px;
+position: fixed;
+height: 10vmin;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+flex-direction: row;
+align-items: centre;
+justify-content: space-between;
+padding: 0 7.8125vw 0 7.8125vw;
+background-color: rgba(0,0,0,0.5);
+}
+        nav button
+        {
+            font-size: 1.25vmax;
+            font-family: Roboto;
+            font-weight: bold;
+            color: rgb(149, 244, 240);
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-shadow: 0 0 5px cyan;
+            transition: font-size 0.5s;
+        }
+        nav a
+        {
+        text-decoration: none;
+        color: rgb(149, 244, 240);
+        transition: color 0.1s;
+        }
+        nav a:active
+        {
+        text-decoration: none;
+        color: white;
+        }
+        nav button:hover
+        {
+        font-size: 1.5vmax;
+        }
+        nav button:active
+        {
+        font-size: 1.5vmax;
+        color: white;
+        }
+    .Button_about
+    {
+
+    }
+    .Button_VR
+    {
+
+    }
+    .Button_contact
+    {
+
+    }
+.intro
+{
+padding: 38vmin 0 15vmin 0;
+/*height: 70vh;*/
+display: grid;
+grid-template-columns: 1fr;
+}
+    .logo2hold
+    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .phold
+    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .logo2
+    {
+    height: 45vmax;
+    object-fit: cover;
+    margin: -18vmax 0 -18vmax 0;
+    }
+    .intro p
+    {
+    margin: 0 0 0 0;
+    font-family: Roboto;
+    color: rgb(149, 244, 240);
+    font-size: 2.34275vw;
+    text-shadow: 0 0 20px cyan;
+    font-weight: bold;
+    }
+.About
+{
+/*height: 89.286vh;*/
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 7.8125vmax 0 7.8125vmax;
+margin 0 0 15vmin 0;
+}
+    .about_text
+    {
+    flex: 1;
+    }
+    .about_text h1
+    {
+    font-size: 3.90625vw;
+    font-family: Roboto;
+    color: rgb(149, 244, 240);
+    text-shadow: 0 0 20px cyan;
+    }
+    .about_text p
+    {
+    font-size: 1.5625vw;
+    font-family: Roboto;
+    color: white;
+    text-shadow: 0 0 5px white;
+    text-align: justify;
+    }
+    .about_mask
+    {
+    float: left;
+    width: 62.5vw;
+    margin: 0 -5vw 0 -5vw;
+    }
+        #slider
+        {
+        width: 52.5vw;
+        overflow: hidden;
+        }
+        #slider figure
+        {
+        z-index: -1;
+        position: relative;
+        width: 320vw;
+        margin: 0;
+        left: 0;
+        animation: slider 25s ease-in-out infinite alternate-reverse;
+        }
+        @keyframes slider
+        {
+        0% {left: 0;}
+
+        13% {left: 0;}
+        16% {left: -54.5vw;}
+
+        29% {left: -54.5vw;}
+        32% {left: -107vw;}
+
+        46% {left: -107vw;}
+        49% {left: -157.5vw;}
+
+        62% {left: -157.5vw;}
+        65% {left: -210vw;}
+
+        78% {left: -210vw;}
+        81% {left: -262.5vw;}
+
+        94% {left: -262.5vw;}
+        97% {left: -262.5vw;}
+
+        100% {left: -262.5vw;}
+        }
+.func
+{
+/*height: 130vmin;*/
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+    .func_img
+    {
+    width: 80vw;
+    }
+    .func p
+    {
+    font-size: 3.90625vw;
+    font-weight: bold;
+    font-family: Roboto;
+    color: rgb(149, 244, 240);
+    text-shadow: 0 0 20px cyan;
+    }
+.VR
+{
+/*height: 90vh;*/
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 7.8125vmin 0 7.8125vmin;
+}
+    .VR_text
+    {
+    width: 39.0625vw;
+    margin: 0 3.90625vmax 0 0;
+    }
+    .vrview
+    {
+    width: 35.15625vw;
+    max-height: 45.9vh;
+    }
+    .VR h1
+    {
+    font-size: 3.90625vw;
+    font-family: Roboto;
+    color: rgb(149, 244, 240);
+    text-shadow: 0 0 20px cyan;
+    }
+    .VR p{
+    font-size: 1.5625vw;
+    font-family: Roboto;
+    color: white;
+    text-shadow: 0 0 5px white;
+    text-align: justify;
+    }
+.VR2
+{
+/*height: 90vh;*/
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 7.8125vmin 0 7.8125vmin;
+}
+    .VR_text2
+    {
+    width: 39.0625vw;
+    margin: 0 0 0 3.90625vmax;
+    }
+    .vrview2
+    {
+    width: 35.15625vw;
+    max-height: 45.9vh;
+    }
+    .VR2 h1
+    {
+    font-size: 3.90625vw;
+    font-family: Roboto;
+    color: rgb(149, 244, 240);
+    text-shadow: 0 0 20px cyan;
+    }
+    .VR2 p{
+    font-size: 1.5625vw;
+    font-family: Roboto;
+    color: white;
+    text-shadow: 0 0 5px white;
+    text-align: justify;
+    }
+        .VR_holder
+        {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        .VR_holder_text
+        {
+        margin: 5vmin 0 0 0;
+        font-size: 1.2vmax;
+        font-family: Roboto;
+        color: white;
+        text-shadow: 0 0 5px white;
+        text-align: justify;
+        }
+.contact
+{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+right: 0;
+left: 0;
+bottom: 0;
+height: 23vh;
+margin-top: 20vmin;
+background-color: rgba(0,0,0,0.6);
+padding-left: 7.8125vw;
+padding-right: 7.8125vw;
+}
+    .contact_logo
+    {
+    width: 31.25vw;
+    height: 14.88vh;
+    object-fit: cover;
+    }
+    .contact_text
+    {
+
+    }
+    .contact_text div
+    {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    }
+    .contact p
+    {
+    margin: 0 0 0 20px;
+    font-size: 0.9375vw;
+    font-family: Roboto;
+    color: white;
+    text-shadow: 0 0 5px white;
+    text-align: justify;
+    }
+    .contact .img2
+    {
+    width: 2.34375vw;
+    }
+@media (orientation: portrait)
+{
+nav
+{
+grid-template-columns: 1fr 1fr 1fr;
+}
+nav button
+{
+font-size: 1.25vmax;
+}
+nav button:hover
+        {
+        font-size: 2vmax;
+        }
+.func_img
+    {
+    width: 90vw;
+    }
+#Particles-BG {
+    all: none;
+}
+}
+
+::-webkit-scrollbar /*disappear the scrollbar*/
+{
+width: 0;
+}
+#scroll_path
+{
+position: fixed;
+top: 0;
+right: 0;
+width: 2vmin;
+height: 200vh;
+background: rgba(255,255,255,0.5);
+}
+#progress_bar
+{
+position: fixed;
+top: 0;
+right: 0;
+width: 2vmin;
+height: 18vmin;
+background: rgb(149, 244, 240);
+animation: animate 5s linear infinite;
+border-radius: 2vmin;
+}
+#progress_bar:before
+{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: cyan;
+filter: blur(30px);
+}
+
+#progress_bar:before
+{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: cyan;
+filter: blur(10px);
+}
